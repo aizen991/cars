@@ -12,7 +12,7 @@ import java.net.URL
 class Repository : IRepository {
 
     /***
-     * our api lik
+     * our api link
      */
     private val url: String = "http://demo1585915.mockable.io/api/v1/cars?page="
 
@@ -30,8 +30,7 @@ class Repository : IRepository {
         Thread {
             try {
 
-                val connection =
-                    URL(url + page).openConnection() as HttpURLConnection
+                val connection = URL(url + page).openConnection() as HttpURLConnection
                 val data = connection.inputStream.bufferedReader().readText()
                 val carList = jsonStringToArrayOfObject(data)
 
