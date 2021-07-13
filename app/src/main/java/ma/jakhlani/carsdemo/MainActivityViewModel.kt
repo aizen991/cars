@@ -15,7 +15,7 @@ import java.lang.Exception
 class MainActivityViewModel(application: Application) : AndroidViewModel(application) {
 
     /***
-     * carsMutableLiveData contain a special setter which calls a abstract function onDataChanged
+     * carsMutableLiveData contain a special setter which calls an abstract function onDataChanged
      * override in MainActivity to update Ui
      * when activity goes to background observer will removed
      */
